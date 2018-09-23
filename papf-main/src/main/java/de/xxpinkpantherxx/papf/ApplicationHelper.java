@@ -8,7 +8,7 @@ public class ApplicationHelper {
     /**
      * Name of massage resource.
      */
-    private final static String MESSAGES_BUNDLE_NAME = "messages";
+    private final static String LOCALISATION_BUNDLE_NAME = "messages";
 
     /**
      * Default locale of the system.
@@ -20,7 +20,7 @@ public class ApplicationHelper {
      * ResourceBundle for internationalization.
      */
     private final static ResourceBundle MESSAGE_BUNDLE =
-            ResourceBundle.getBundle(MESSAGES_BUNDLE_NAME, SYSTEM_LOCALE);
+            ResourceBundle.getBundle(LOCALISATION_BUNDLE_NAME, SYSTEM_LOCALE);
 
     /**
      * Returns a localized string referred by the messagedKey.
@@ -30,5 +30,14 @@ public class ApplicationHelper {
      */
     public static String getMessage(final String messageKey) {
         return MESSAGE_BUNDLE.getString(messageKey);
+    }
+
+    /**
+     * Returns the default locale of the system.
+     *
+     * @return Not null.
+     */
+    public static Locale getSystemLocale() {
+        return SYSTEM_LOCALE;
     }
 }
