@@ -10,8 +10,6 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>papf-main</module>
-        <module>PaPF-Generic</module>
-        <module>papf-generic</module>
         <module>papf-generic</module>
     </modules>
 
