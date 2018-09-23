@@ -1,0 +1,33 @@
+<!--
+  ~ Copyright (c) 2010. portrix.net GmbH
+  ~
+  ~ Version Information
+  ~ $Rev::                          $:  Revision of last commit
+  ~ $Author::                       $:  Author of last commit
+  ~ $Date::                         $:  Date of last commit
+  -->
+
+<!--clean install -Pfull cobertura:cobertura findbugs:findbugs checkstyle:checkstyle-->
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.pinkpanther.papf</groupId>
+    <artifactId>papf-root</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.0.1b-SNAPSHOT</version>
+    <name>Pen and Paper Friend</name>
+    <description>This is the Global Price Management Tool</description>
+
+    <modules>
+        <module>generic</module>
+        <module>main</module>
+        <module>shadowrun</module>
+        <module>parent</module>
+    </modules>
+
+    <build>
+        <defaultGoal>package</defaultGoal>
+    </build>
+</project>
