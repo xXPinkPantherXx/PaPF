@@ -5,19 +5,21 @@
     <parent>
         <artifactId>parent</artifactId>
         <groupId>de.pinkpanther.papf</groupId>
-        <version>0.0.0.1-SNAPSHOT</version>
+        <version>0.0.0.1b-SNAPSHOT</version>
+        <relativePath>../parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>shadowrun</artifactId>
+    <version>${parent.version}</version>
+    <packaging>jar</packaging>
+    <name>Pen and Paper Friend Shadowrun Module</name>
 
     <dependencies>
         <dependency>
-            <groupId>de.pinkpanther.papf</groupId>
-            <artifactId>parent</artifactId>
-            <version>0.0.0.1-SNAPSHOT</version>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>generic</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
-
-
 </project>

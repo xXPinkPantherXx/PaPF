@@ -27,6 +27,7 @@ public class ApplicationHelper {
     }
 
     public static String getMessage(final String messageKey, final Locale locale) {
+
         return ResourceBundle.getBundle(LOCALISATION_BUNDLE_NAME, locale).getString(messageKey);
     }
 

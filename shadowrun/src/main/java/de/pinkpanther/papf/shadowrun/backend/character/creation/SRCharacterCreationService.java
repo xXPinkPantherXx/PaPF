@@ -1,6 +1,6 @@
 package de.pinkpanther.papf.shadowrun.backend.character.creation;
 
-import de.pinkpanther.papf.parent.backend.character.creation.CharacterCreationService;
+import de.pinkpanther.papf.generic.backend.character.creation.CharacterCreationService;
 
 public class SRCharacterCreationService extends CharacterCreationService {
 }

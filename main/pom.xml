@@ -5,13 +5,13 @@
     <parent>
         <artifactId>parent</artifactId>
         <groupId>de.pinkpanther.papf</groupId>
-        <version>0.0.0.1-SNAPSHOT</version>
+        <version>0.0.0.1b-SNAPSHOT</version>
         <relativePath>../parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>papf-main</artifactId>
-    <version>0.0.0.1-SNAPSHOT</version>
+    <artifactId>papf</artifactId>
+    <version>${parent.version}</version>
     <packaging>war</packaging>
     <name>Pen and Paper Friend Main Module</name>
 

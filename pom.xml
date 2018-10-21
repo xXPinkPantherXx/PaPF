@@ -11,15 +11,15 @@
 
     <groupId>de.pinkpanther.papf</groupId>
     <artifactId>root</artifactId>
-    <version>0.0.0.1-SNAPSHOT</version>
+    <version>0.0.0.1b-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Pen and Paper Friend</name>
 
     <modules>
+        <module>shadowrun</module>
+        <module>main</module>
         <module>generic</module>
         <module>parent</module>
-        <module>main</module>
-        <module>shadowrun</module>
     </modules>
 
     <properties>
