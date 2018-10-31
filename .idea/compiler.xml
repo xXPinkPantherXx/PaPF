@@ -6,9 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="papf-generic" />
+        <module name="papf-main" />
+        <module name="papf-shadowrun" />
         <module name="papfgeneric" />
-        <module name="papfmain" />
+        <module name="shadowrun-backend" />
+        <module name="shadowrun-facade" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="backend" target="1.8" />
+      <module name="frontend" target="1.8" />
+      <module name="main-backend" target="1.8" />
+      <module name="main-frontend" target="1.8" />
+      <module name="papf-facade" target="1.8" />
+      <module name="papf-generic" target="1.8" />
+      <module name="papf-paps" target="1.8" />
+      <module name="papf-root" target="1.8" />
+      <module name="papf-shadowrun" target="1.8" />
+      <module name="papfmain" target="1.8" />
+      <module name="shadowrun-backend" target="1.8" />
+      <module name="shadowrun-facade" target="1.8" />
+      <module name="shadowrun-frontend" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
