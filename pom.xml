@@ -1,0 +1,37 @@
+<!--
+  ~ Version Information
+  ~ $Rev::                          $:  Revision of last commit
+  ~ $Author::                       $:  Author of last commit
+  ~ $Date::                         $:  Date of last commit
+  -->
+
+<!--clean install -Pfull cobertura:cobertura findbugs:findbugs checkstyle:checkstyle-->
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.pinkpanther.papf</groupId>
+    <artifactId>papf-root</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.0.1a-SNAPSHOT</version>
+    <name>Pen and Paper Friend</name>
+    <description>This is the Pen and Paper Friend</description>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <modules>
+        <module>parent</module>
+        <module>generic</module>
+        <module>main</module>
+        <module>pap</module>
+        <module>shadowrun</module>
+    </modules>
+
+    <build>
+        <defaultGoal>package</defaultGoal>
+    </build>
+</project>

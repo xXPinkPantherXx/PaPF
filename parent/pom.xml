@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>papf-parent</artifactId>
+    <groupId>de.pinkpanther.papf</groupId>
+    <packaging>pom</packaging>
+    <version>0.0.0.1a-SNAPSHOT</version>
+    <name>Pen and Paper Friend Parent Module</name>
+
+    <inceptionYear>2018</inceptionYear>
+    <issueManagement>
+        <system>IntelliJ YouTracker</system>
+        <url>http://127.0.0.1/youtrack/issues</url>
+    </issueManagement>
+    <!--<organization>-->
+        <!--<name></name>-->
+        <!--<url></url>-->
+    <!--</organization>-->
+    <!--<url></url>-->
+    <scm>
+        <connection>scm:git:git@github.com/xXPinkPantherXx/PaPF</connection>
+        <developerConnection>scm:git:git@github.com/xXPinkPantherXx/PaPF</developerConnection>
+    </scm>
+    <developers>
+        <developer>
+            <id>xXPinkPantherXx</id>
+            <name>Momme Raap</name>
+            <email>momme.r@hotmail.de</email>
+            <roles>
+                <role>Chief Application Architect</role>
+                <role>Developer</role>
+            </roles>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <distribution>on request</distribution>
+        </license>
+    </licenses>
+
+    <properties>
+        <slf4j.version>1.7.25</slf4j.version>
+        <spring.version>5.0.9.RELEASE</spring.version>
+    </properties>
+
+    <dependencies>
+        <!-- Util Frameworks -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>23.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+    </dependencies>
+</project>

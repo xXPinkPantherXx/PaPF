@@ -1,0 +1,22 @@
+/*body {*/
+    /*width: 100%;*/
+/*}*/
+
+table {
+    table-layout:fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid green;
+    /*display: block;*/
+}
+caption {
+    border: 1px solid green;
+    border-bottom: 0;
+    font-weight: bold;
+    font-family: Calibri;
+
+}
+.borders tr {
+    border-bottom: 1px solid green;
+    border-top: 1px solid green;
+}
