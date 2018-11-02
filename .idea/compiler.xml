@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="papf-generic" />
+        <module name="papf-main" />
+        <module name="papf-pap" />
+        <module name="papf-shadowrun" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="papf-generic" target="1.8" />
+      <module name="papf-main" target="1.8" />
+      <module name="papf-pap" target="1.8" />
+      <module name="papf-root" target="1.8" />
+      <module name="papf-shadowrun" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
