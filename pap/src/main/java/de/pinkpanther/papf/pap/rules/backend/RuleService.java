@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.pap.rules.backend;
 
-import de.pinkpanther.papf.generic.backend.PAPFService;
+import de.pinkpanther.papf.pap.backend.PAPService;
 
-public class RuleService extends PAPFService {
+/**
+ * The abstract base class of all rule services.
+ */
+public abstract class RuleService<E extends RuleEntity> extends PAPService<E> {
 }

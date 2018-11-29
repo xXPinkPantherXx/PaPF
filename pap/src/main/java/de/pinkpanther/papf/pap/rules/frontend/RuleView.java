@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.pap.rules.frontend;
 
-import de.pinkpanther.papf.generic.frontend.PAPFView;
+import de.pinkpanther.papf.pap.frontend.PAPView;
 
-public class RuleView extends PAPFView {
+/**
+ * The abstract base class of all rule views.
+ */
+public abstract class RuleView extends PAPView {
 }

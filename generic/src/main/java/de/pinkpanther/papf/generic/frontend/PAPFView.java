@@ -1,4 +1,7 @@
 package de.pinkpanther.papf.generic.frontend;
 
-public abstract class PAPFView {
+/**
+ * The abstract base class of all views.
+ */
+public abstract class PAPFView<D extends PAPFDisplayObject> {
 }

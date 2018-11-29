@@ -1,4 +1,7 @@
 package de.pinkpanther.papf.pap.rules.frontend;
 
-public class RuleDetailDisplay extends RuleDisplay {
+/**
+ * The abstract base class of all rule facade objects.
+ */
+public abstract class RuleDetailDisplay extends RuleDisplay {
 }

@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.shadowrun.abilities.frontend;
 
-import de.pinkpanther.papf.pap.abilities.frontend.PAPAbilityView;
+import de.pinkpanther.papf.pap.abilities.frontend.AbilityView;
 
-public class ShadowrunAbilityView extends PAPAbilityView {
+/**
+ * The {@link AbilityView} for the shadowrun module.
+ */
+public class ShadowrunAbilityView extends AbilityView {
 }

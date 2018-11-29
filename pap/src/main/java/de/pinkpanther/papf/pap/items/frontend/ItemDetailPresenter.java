@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.pap.items.frontend;
 
-import de.pinkpanther.papf.generic.frontend.PAPFPresenter;
+import de.pinkpanther.papf.pap.frontend.PAPPresenter;
 
-public class ItemDetailPresenter extends PAPFPresenter {
+/**
+ * The abstract base class of all item detail presenters.
+ */
+public abstract class ItemDetailPresenter<E extends ItemDetailDisplay> extends PAPPresenter<E> {
 }

@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.pap.items.frontend;
 
-import de.pinkpanther.papf.generic.frontend.PAPFPresenter;
+import de.pinkpanther.papf.pap.frontend.PAPPresenter;
 
-public class ItemEditPresenter extends PAPFPresenter {
+/**
+ * The abstract base class of all item edit presenters.
+ */
+public abstract class ItemEditPresenter<E extends ItemEdit> extends PAPPresenter<E> {
 }

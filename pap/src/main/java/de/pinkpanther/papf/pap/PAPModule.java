@@ -14,27 +14,23 @@ import java.util.List;
 /**
  * The abstract base class of all pap modules.
  *
- * @param <E> extends {@link PAPEntity}
  * @param <S> extends {@link PAPService}
- * @param <D> extends {@link PAPDisplayObject}
  * @param <P> extends {@link PAPPresenter}
- * @param <FO> extends {@link PAPFacadeObject}
  * @param <F> extends {@link PAPFacade}
  */
-public abstract class PAPModule<E extends PAPEntity,
-                                S extends PAPService<E>,
-                                D extends PAPDisplayObject,
-                                P extends PAPPresenter<D>,
-                                FO extends PAPFacadeObject,
-                                F extends PAPFacade<E, FO, D>> extends PAPFModule<E, S, D, P, FO, F> {
-
+public abstract class PAPModule<S extends PAPService<?>,
+                                P extends PAPPresenter<?>,
+                                F extends PAPFacade<?, ?, ?>>
+        extends PAPFModule<S, P, F> {
 
     /**
      * The constructor.
      *
-     * @param facades Not null.
+     * @param moduleService   Not null.
+     * @param modulePresenter Not null.
+     * @param moduleFacade    Not null.
      */
-    public PAPModule(@Nonnull List<F> facades) {
-        super(facades);
+    protected PAPModule(@Nonnull S moduleService, @Nonnull P modulePresenter, @Nonnull F moduleFacade) {
+        super(moduleService, modulePresenter, moduleFacade);
     }
 }

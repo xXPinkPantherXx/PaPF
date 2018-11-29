@@ -1,11 +1,8 @@
 package de.pinkpanther.papf.generic;
 
 import com.google.common.base.Preconditions;
-import de.pinkpanther.papf.generic.backend.PAPFEntity;
 import de.pinkpanther.papf.generic.backend.PAPFService;
 import de.pinkpanther.papf.generic.facade.PAPFFacade;
-import de.pinkpanther.papf.generic.facade.PAPFFacadeObject;
-import de.pinkpanther.papf.generic.frontend.PAPFDisplayObject;
 import de.pinkpanther.papf.generic.frontend.PAPFPresenter;
 
 import javax.annotation.Nonnull;
@@ -13,45 +10,52 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * The abstract base class of all modules in this program.
+ * The abstract base class of all modules in this application.
  *
- * @param <E> extends {@link PAPFEntity}
- * @param <S> extends {@link PAPFService}
- * @param <D> extends {@link PAPFDisplayObject}
+ *  @param <S> extends {@link PAPFService}
  * @param <P> extends {@link PAPFPresenter}
- * @param <FO> extends {@link PAPFFacadeObject}
  * @param <F> extends {@link PAPFFacade}
  */
-public abstract class PAPFModule<E extends PAPFEntity,
-                    S extends PAPFService<E>,
-                    D extends PAPFDisplayObject,
-                    P extends PAPFPresenter<D>,
-                    FO extends PAPFFacadeObject,
-                    F extends PAPFFacade<E, FO, D>> {
-
-    /**
-     * The minimum count of facades that need to be registered.
-     */
-    private final int MIN_FACADE_COUNT = 5;
+public abstract class PAPFModule<S extends PAPFService<?>, P extends PAPFPresenter<?>, F extends PAPFFacade<?, ?, ?>> {
 
     /**
      * The facades registered to this module.
      *
      * @see PAPFFacade
      */
-    private final List<F> facadeRegistry = new ArrayList<>(MIN_FACADE_COUNT);
+    @Nonnull
+    private final List<F> facadeRegistry = new ArrayList<>();
+
+    /**
+     * The module service.
+     */
+    private final S moduleService;
+
+    /**
+     * The module presenter.
+     */
+    private final P modulePresenter;
+
+    /**
+     * The module facade.
+     */
+    private final F moduleFacade;
 
     /**
      * The constructor.
      *
-     * @param facades Not null.
+     * @param moduleService Not null.
+     * @param modulePresenter Not null.
+     * @param moduleFacade Not null.
      */
-    protected PAPFModule(@Nonnull final List<F> facades) {
-        Preconditions.checkNotNull(facades, "'facade' should not be null!");
-        Preconditions.checkArgument(facades.size() >= MIN_FACADE_COUNT,
-                                  "The minimum of facades to register ist " + MIN_FACADE_COUNT + "!" );
+    protected PAPFModule(@Nonnull final S moduleService, @Nonnull final P modulePresenter, @Nonnull final F moduleFacade) {
+        Preconditions.checkNotNull(moduleService, "moduleService should not be null!");
+        Preconditions.checkNotNull(modulePresenter, "modulePresenter should not be null!");
+        Preconditions.checkNotNull(moduleFacade, "moduleFacade should not be null!");
 
-        registerFacades(facades);
+        this.moduleService = moduleService;
+        this.modulePresenter = modulePresenter;
+        this.moduleFacade = moduleFacade;
     }
 
     /**
@@ -60,7 +64,7 @@ public abstract class PAPFModule<E extends PAPFEntity,
      * @param facades Not null.
      */
     protected final void registerFacades(@Nonnull final List<F> facades) {
-        Preconditions.checkNotNull(facades, "'facades' should not be null!");
+        Preconditions.checkNotNull(facades, "facades should not be null!");
 
         for(final F facade : facades) {
             Preconditions.checkNotNull(facade, "facade should not be null!");
@@ -75,11 +79,10 @@ public abstract class PAPFModule<E extends PAPFEntity,
      * @param facade Not null.
      */
     protected final void registerFacade(@Nonnull final F facade) {
-        Preconditions.checkNotNull(facade, "'facade' should not be null!");
+        Preconditions.checkNotNull(facade, "facade should not be null!");
 
-        if(facadeRegistry.contains(facade)) {
-            throw new RuntimeException("Facade already registered: " + facade.toString());
+        if(!facadeRegistry.contains(facade)) {
+            facadeRegistry.add(facade);
         }
-        facadeRegistry.add(facade);
     }
 }

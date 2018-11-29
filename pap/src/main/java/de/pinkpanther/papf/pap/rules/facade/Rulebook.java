@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.pap.rules.facade;
 
-import de.pinkpanther.papf.generic.facade.PAPFFacadeObject;
+import de.pinkpanther.papf.pap.facade.PAPFacadeObject;
 
-public class Rulebook extends PAPFFacadeObject {
+/**
+ * The abstract base class of all rulebook facade objects.
+ */
+public abstract class Rulebook extends PAPFacadeObject {
 }

@@ -1,4 +1,7 @@
 package de.pinkpanther.papf.pap.items.frontend;
 
-public class ItemDetailDisplay extends ItemDisplay {
+/**
+ * The abstract base class of all item detail display objects.
+ */
+public abstract class ItemDetailDisplay extends ItemDisplay {
 }

@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.pap.rules.backend;
 
-import de.pinkpanther.papf.generic.backend.PAPFDAO;
+import de.pinkpanther.papf.pap.backend.PAPDAO;
 
-public class RulebookDAO extends PAPFDAO {
+/**
+ * The abstract base class of all rulebook DAOs.
+ */
+public abstract class RulebookDAO extends PAPDAO {
 }

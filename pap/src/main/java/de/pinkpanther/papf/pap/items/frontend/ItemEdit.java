@@ -1,4 +1,7 @@
 package de.pinkpanther.papf.pap.items.frontend;
 
-public class ItemEdit extends ItemDetailDisplay {
+/**
+ * The abstract base class of all item edit objects.
+ */
+public abstract class ItemEdit extends ItemDetailDisplay {
 }

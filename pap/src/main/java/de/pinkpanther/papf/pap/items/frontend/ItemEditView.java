@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.pap.items.frontend;
 
-import de.pinkpanther.papf.generic.frontend.PAPFView;
+import de.pinkpanther.papf.pap.frontend.PAPView;
 
-public class ItemEditView extends PAPFView {
+/**
+ * The abstract base class of all item edit views.
+ */
+public abstract class ItemEditView extends PAPView {
 }

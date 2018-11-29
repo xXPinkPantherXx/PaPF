@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.pap.rules.frontend;
 
-import de.pinkpanther.papf.generic.frontend.PAPFPresenter;
+import de.pinkpanther.papf.pap.frontend.PAPPresenter;
 
-public class RulebookPresenter extends PAPFPresenter {
+/**
+ * The abstract base class of all rulebook presenters.
+ */
+public abstract class RulebookPresenter<D extends RulebookDisplay> extends PAPPresenter<D> {
 }

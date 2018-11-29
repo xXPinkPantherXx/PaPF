@@ -4,9 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>de.pinkpanther.papf</groupId>
+    <parent>
+        <artifactId>papf-parent</artifactId>
+        <groupId>de.pinkpanther.papf</groupId>
+        <version>0.0.0.1a-SNAPSHOT</version>
+        <relativePath>../parent/</relativePath>
+    </parent>
+
     <artifactId>papf-generic</artifactId>
-    <version>0.0.0.1b-SNAPSHOT</version>
+    <version>0.0.0.1a-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Pen and Paper Friend Generic Module</name>
 
@@ -17,13 +23,8 @@
         <java.file.encoding>UTF-8</java.file.encoding>
     </properties>
 
+
     <dependencies>
-        <!-- Util Frameworks -->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>23.0</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -52,17 +53,7 @@
                         <source>${java.source.version}</source>
                         <target>${java.target.version}</target>
                         <encoding>${java.file.encoding}</encoding>
-                        <!-- IMPORTANT -->
                         <useIncrementalCompilation>false</useIncrementalCompilation>
-                        <!-- use if more error messages are needed -->
-                        <!--<compilerArguments>-->
-                        <!--<Xmaxerrs>6000</Xmaxerrs>-->
-                        <!--</compilerArguments>-->
-                        <!--<compilerArgument>-proc:none</compilerArgument>-->
-                        <!-- use if more error messages are needed -->
-                        <!-- <compilerArguments>
-                         <Xmaxerrs>6000</Xmaxerrs>
-                         </compilerArguments>-->
                     </configuration>
                 </plugin>
                 <plugin>
@@ -81,25 +72,7 @@
                         <argLine>-Xmx2048m -XX:MaxPermSize=512m</argLine>
                     </configuration>
                 </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-pmd-plugin</artifactId>
-                    <version>3.7</version>
-                    <configuration>
-                        <failOnViolation>false</failOnViolation>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>cpd-check</goal>
-                            </goals>
-                            <phase>verify</phase>
-                        </execution>
-                    </executions>
-                </plugin>
             </plugins>
         </pluginManagement>
     </build>
-
-
 </project>

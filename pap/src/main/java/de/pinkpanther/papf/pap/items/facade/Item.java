@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.pap.items.facade;
 
-import de.pinkpanther.papf.generic.facade.PAPFFacadeObject;
+import de.pinkpanther.papf.pap.facade.PAPFacadeObject;
 
-public class Item extends PAPFFacadeObject {
+/**
+ * The abstract base class of all item facade objects.
+ */
+public abstract class Item extends PAPFacadeObject {
 }

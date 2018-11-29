@@ -1,4 +1,7 @@
 package de.pinkpanther.papf.pap.characters.frontend;
 
-public class CharacterDetailDisplay extends CharacterDisplay {
+/**
+ * The abstract base class of all character detail display objects.
+ */
+public abstract class CharacterDetailDisplay extends CharacterDisplay {
 }

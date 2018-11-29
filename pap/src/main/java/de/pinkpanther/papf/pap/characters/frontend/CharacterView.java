@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.pap.characters.frontend;
 
-import de.pinkpanther.papf.generic.frontend.PAPFView;
+import de.pinkpanther.papf.pap.frontend.PAPView;
 
-public class CharacterView extends PAPFView {
+/**
+ * The abstract base class of all character views.
+ */
+public abstract class CharacterView<D extends CharacterDisplay> extends PAPView<D> {
 }

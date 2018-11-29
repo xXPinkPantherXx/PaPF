@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.pap.characters.frontend;
 
-import de.pinkpanther.papf.generic.frontend.PAPFPresenter;
+import de.pinkpanther.papf.pap.frontend.PAPPresenter;
 
-public class CharacterEditPresenter extends PAPFPresenter {
+/**
+ * The abstract base class of all character edit presenters.
+ */
+public abstract class CharacterEditPresenter extends PAPPresenter {
 }

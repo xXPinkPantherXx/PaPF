@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.shadowrun.abilities.frontend;
 
-import de.pinkpanther.papf.pap.abilities.frontend.PAPAbilityPresenter;
+import de.pinkpanther.papf.pap.abilities.frontend.AbilityPresenter;
 
-public class ShadowrunAbilityPresenter extends PAPAbilityPresenter {
+/**
+ * The {@link AbilityPresenter} for the shadowrun module.
+ */
+public class ShadowrunAbilityPresenter extends AbilityPresenter<ShadowrunAbilityDisplay> {
 }

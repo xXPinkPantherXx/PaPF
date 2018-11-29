@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.pap.items.frontend;
 
-import de.pinkpanther.papf.generic.frontend.PAPFDisplayObject;
+import de.pinkpanther.papf.pap.frontend.PAPDisplayObject;
 
-public class ItemDisplay extends PAPFDisplayObject {
+/**
+ * The abstract base class of all item display objects.
+ */
+public abstract class ItemDisplay extends PAPDisplayObject {
 }

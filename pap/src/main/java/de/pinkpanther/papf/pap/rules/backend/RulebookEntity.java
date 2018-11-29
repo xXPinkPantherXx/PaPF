@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.pap.rules.backend;
 
-import de.pinkpanther.papf.generic.backend.PAPFEntity;
+import de.pinkpanther.papf.pap.backend.PAPEntity;
 
-public class RulebookEntity extends PAPFEntity {
+/**
+ * The abstract base class of all rulebook entities.
+ */
+public abstract class RulebookEntity extends PAPEntity {
 }

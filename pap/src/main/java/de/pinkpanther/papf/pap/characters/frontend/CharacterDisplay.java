@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.pap.characters.frontend;
 
-import de.pinkpanther.papf.generic.frontend.PAPFDisplayObject;
+import de.pinkpanther.papf.pap.frontend.PAPDisplayObject;
 
-public class CharacterDisplay extends PAPFDisplayObject {
+/**
+ * The abstract base class of all character display objects.
+ */
+public abstract class CharacterDisplay extends PAPDisplayObject {
 }

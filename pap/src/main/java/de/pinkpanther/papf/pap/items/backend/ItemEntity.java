@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.pap.items.backend;
 
-import de.pinkpanther.papf.generic.backend.PAPFEntity;
+import de.pinkpanther.papf.pap.backend.PAPEntity;
 
-public class ItemEntity extends PAPFEntity {
+/**
+ * The abstract base class of all item entities.
+ */
+public abstract class ItemEntity extends PAPEntity {
 }

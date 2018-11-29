@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.pap.items.backend;
 
-import de.pinkpanther.papf.generic.backend.PAPFDAO;
+import de.pinkpanther.papf.pap.backend.PAPDAO;
 
-public class ItemDAO extends PAPFDAO {
+/**
+ * The abstract base class of all item DAOs.
+ */
+public abstract class ItemDAO extends PAPDAO {
 }

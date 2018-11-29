@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/generic/papf-generic.iml" filepath="$PROJECT_DIR$/generic/papf-generic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/papf-main.iml" filepath="$PROJECT_DIR$/main/papf-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pap/papf-pap.iml" filepath="$PROJECT_DIR$/pap/papf-pap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/papf-parent.iml" filepath="$PROJECT_DIR$/parent/papf-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/papf-root.iml" filepath="$PROJECT_DIR$/papf-root.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shadowrun/papf-shadowrun.iml" filepath="$PROJECT_DIR$/shadowrun/papf-shadowrun.iml" />
+    </modules>
+  </component>
+</project>

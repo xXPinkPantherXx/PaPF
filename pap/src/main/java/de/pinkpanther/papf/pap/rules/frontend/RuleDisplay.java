@@ -1,6 +1,9 @@
 package de.pinkpanther.papf.pap.rules.frontend;
 
-import de.pinkpanther.papf.generic.frontend.PAPFDisplayObject;
+import de.pinkpanther.papf.pap.frontend.PAPDisplayObject;
 
-public class RuleDisplay extends PAPFDisplayObject {
+/**
+ * The abstract base class of all rule display objects.
+ */
+public abstract class RuleDisplay extends PAPDisplayObject {
 }
