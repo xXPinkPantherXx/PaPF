@@ -28,7 +28,7 @@
         <module>generic</module>
         <module>main</module>
         <module>pap</module>
-        <module>shadowrun</module>
+        <module>dsa</module>
     </modules>
 
     <build>

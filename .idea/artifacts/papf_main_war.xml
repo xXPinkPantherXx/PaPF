@@ -1,6 +1,12 @@
 <component name="ArtifactManager">
   <artifact type="war" name="papf-main:war">
     <output-path>$PROJECT_DIR$/main/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>papf-main</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="archive" name="papf-main-0.0.0.1a-SNAPSHOT.war">
       <element id="artifact" artifact-name="papf-main:war exploded" />
     </root>

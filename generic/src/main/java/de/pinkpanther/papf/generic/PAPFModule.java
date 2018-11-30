@@ -56,7 +56,10 @@ public abstract class PAPFModule<S extends PAPFService<?>, P extends PAPFPresent
         this.moduleService = moduleService;
         this.modulePresenter = modulePresenter;
         this.moduleFacade = moduleFacade;
+        initialize();
     }
+
+    protected abstract void initialize();
 
     /**
      * Method to register multiple new {@link PAPFFacade facades}.

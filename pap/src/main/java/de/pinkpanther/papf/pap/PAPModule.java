@@ -1,15 +1,11 @@
 package de.pinkpanther.papf.pap;
 
 import de.pinkpanther.papf.generic.PAPFModule;
-import de.pinkpanther.papf.pap.backend.PAPEntity;
 import de.pinkpanther.papf.pap.backend.PAPService;
 import de.pinkpanther.papf.pap.facade.PAPFacade;
-import de.pinkpanther.papf.pap.facade.PAPFacadeObject;
-import de.pinkpanther.papf.pap.frontend.PAPDisplayObject;
 import de.pinkpanther.papf.pap.frontend.PAPPresenter;
 
 import javax.annotation.Nonnull;
-import java.util.List;
 
 /**
  * The abstract base class of all pap modules.
@@ -26,11 +22,11 @@ public abstract class PAPModule<S extends PAPService<?>,
     /**
      * The constructor.
      *
-     * @param moduleService   Not null.
-     * @param modulePresenter Not null.
-     * @param moduleFacade    Not null.
+     * @param papService   Not null.
+     * @param papPresenter Not null.
+     * @param papFacade    Not null.
      */
-    protected PAPModule(@Nonnull S moduleService, @Nonnull P modulePresenter, @Nonnull F moduleFacade) {
-        super(moduleService, modulePresenter, moduleFacade);
+    protected PAPModule(@Nonnull S papService, @Nonnull P papPresenter, @Nonnull F papFacade) {
+        super(papService, papPresenter, papFacade);
     }
 }

@@ -6,19 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="papf-dsa" />
         <module name="papf-generic" />
         <module name="papf-main" />
         <module name="papf-pap" />
-        <module name="papf-shadowrun" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="papf-dsa" target="1.8" />
       <module name="papf-generic" target="1.8" />
       <module name="papf-main" target="1.8" />
-      <module name="papf-pap" target="1.5" />
+      <module name="papf-pap" target="1.8" />
       <module name="papf-parent" target="1.5" />
       <module name="papf-root" target="1.8" />
-      <module name="papf-shadowrun" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
