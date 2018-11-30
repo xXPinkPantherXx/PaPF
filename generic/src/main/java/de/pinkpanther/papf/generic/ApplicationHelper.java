@@ -25,7 +25,8 @@ public class ApplicationHelper {
             new Locale(System.getProperty("user.language"), System.getProperty("user.country"));
 
     /**
-     * Returns a string referred by the message key for the system locale.
+     * Returns a string referred by the message key for the system locale
+     * from the default message bundle.
      *
      * @param messageKey Not null
      * @return Not null.
@@ -36,7 +37,8 @@ public class ApplicationHelper {
     }
 
     /**
-     * Returns a string referred by the message key for the given locale.
+     * Returns a string referred by the message key for the given locale
+     * from the default message bundle.
      *
      * @param messageKey Not null.
      * @param locale Not null.
@@ -47,7 +49,41 @@ public class ApplicationHelper {
         Preconditions.checkNotNull(messageKey, "messageKey should not be null!");
         Preconditions.checkNotNull(locale, "locale should not be null!");
 
-        return ResourceBundle.getBundle(LOCALISATION_BUNDLE_NAME, locale).getString(messageKey);
+        return getMessage(LOCALISATION_BUNDLE_NAME, messageKey, locale);
+    }
+
+    /**
+     * Returns a string referred by the message key for the system locale
+     * from the given message bundle.
+     *
+     * @param bundleName Not null.
+     * @param messageKey Not null.
+     * @return Not null.
+     */
+    @Nonnull
+    public static String getMessage(@Nonnull final String bundleName, @Nonnull final String messageKey) {
+        Preconditions.checkNotNull(bundleName, "bundleName should not be null!");
+        Preconditions.checkNotNull(messageKey, "messageKey should not be null!");
+
+        return getMessage(bundleName, messageKey, SYSTEM_LOCALE);
+    }
+
+    /**
+     * Returns a string referred by the message key for the given locale
+     * from the given message bundle.
+     *
+     * @param bundleName Not null.
+     * @param messageKey Not null.
+     * @param locale Not null.
+     * @return Not null.
+     */
+    @Nonnull
+    public static String getMessage(@Nonnull final String bundleName, @Nonnull final String messageKey, @Nonnull final Locale locale) {
+        Preconditions.checkNotNull(bundleName, "bundleName should not be null!");
+        Preconditions.checkNotNull(messageKey, "messageKey should not be null!");
+        Preconditions.checkNotNull(locale, "locale should not be null!");
+
+        return ResourceBundle.getBundle(bundleName, locale).getString(messageKey);
     }
 
     /**

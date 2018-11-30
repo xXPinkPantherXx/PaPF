@@ -5,7 +5,7 @@ import javax.annotation.Nonnull;
 /**
  * The abstract base class of all display objects.
  */
-public abstract class PAPFDisplayObject {
+public interface PAPFDisplayObject {
 
     /**
      * Returns the name of this display object.

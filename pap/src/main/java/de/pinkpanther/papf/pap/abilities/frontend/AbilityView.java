@@ -5,5 +5,5 @@ import de.pinkpanther.papf.pap.frontend.PAPView;
 /**
  * The abstract base class of all ability views.
  */
-public abstract class AbilityView extends PAPView {
+public abstract class AbilityView implements PAPView {
 }

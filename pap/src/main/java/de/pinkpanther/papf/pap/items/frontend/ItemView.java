@@ -5,5 +5,5 @@ import de.pinkpanther.papf.pap.frontend.PAPView;
 /**
  * The abstract base class of all item views.
  */
-public abstract class ItemView extends PAPView {
+public abstract class ItemView implements PAPView {
 }

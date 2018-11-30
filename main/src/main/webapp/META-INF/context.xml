@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<Context path="./db/">
+
+    <Resource name="jdbc/PAPFDB"
+              auth="Container"
+              type="javax.sql.DataSource"
+              username="sa"
+              password=""
+              driverClassName="org.hsqldb.jdbcDriver"
+              url="jdbc:hsqldb:res:./data/"
+              maxActive="8"
+              maxIdle="4"/>
+</Context>

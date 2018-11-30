@@ -5,5 +5,5 @@ import de.pinkpanther.papf.pap.frontend.PAPDisplayObject;
 /**
  * The abstract base class of all rulebook display objects.
  */
-public abstract class RulebookDisplay extends PAPDisplayObject {
+public abstract class RulebookDisplay implements PAPDisplayObject {
 }

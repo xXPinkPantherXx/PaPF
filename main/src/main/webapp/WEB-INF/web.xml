@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+
+    <display-name>SausageServlet</display-name>
+
+    <welcome-file-list>
+        <welcome-file>view\dashboard.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>DashboardPresenter</servlet-name>
+        <servlet-class>de.pinkpanther.papf.main.frontend.DashboardPresenter</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DashboardPresenter</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+
+
+    <resource-ref>
+        <description>
+            PAPF Database
+        </description>
+        <res-ref-name>
+            jdbc/PAPFDB
+        </res-ref-name>
+        <res-type>
+            javax.sql.DataSource
+        </res-type>
+        <res-auth>
+            Container
+        </res-auth>
+    </resource-ref>
+
+</web-app>

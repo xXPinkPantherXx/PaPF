@@ -18,4 +18,8 @@ public abstract class PAPFFacade<E extends PAPFEntity, F extends PAPFFacadeObjec
      */
     @Nonnull
     protected abstract D convertEntityToDisplay(@Nonnull final E entity);
+
+
+    @Nonnull
+    protected abstract F convertEntityToFacadeObject(@Nonnull final E entity);
 }

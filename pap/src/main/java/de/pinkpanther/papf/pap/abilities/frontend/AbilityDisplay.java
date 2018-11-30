@@ -5,5 +5,5 @@ import de.pinkpanther.papf.pap.frontend.PAPDisplayObject;
 /**
  * The abstract base class of all ability display objects.
  */
-public abstract class AbilityDisplay extends PAPDisplayObject {
+public abstract class AbilityDisplay implements PAPDisplayObject {
 }
